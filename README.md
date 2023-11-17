@@ -2,6 +2,16 @@
 
 Curso de cypress para Leda-MC
 
+Laboratorio ejemplo  y artículos
+
+https://github.com/AlbertoBasalo/cy-lab
+
+https://albertobasalo.medium.com/intro-to-web-testing-with-cypress-85f60e761e09
+
+https://medium.com/@albertobasalo/advanced-tips-for-testing-with-cypress-d1b0f043ebd9
+
+
+
 ## Clone Repository, install dependencies, and run the project
 
 ```bash
