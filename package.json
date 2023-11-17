@@ -1,0 +1,16 @@
+{
+  "name": "leda_cypress",
+  "version": "1.0.0",
+  "description": "Curso de cypress para Leda-MC",
+  "main": "index.js",
+  "scripts": {
+    "start": "cypres open",
+    "test": "cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.5.1"
+  }
+}
