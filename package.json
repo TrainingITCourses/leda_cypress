@@ -4,7 +4,7 @@
   "description": "Curso de cypress para Leda-MC",
   "main": "index.js",
   "scripts": {
-    "start": "cypres open",
+    "start": "cypress open",
     "test": "cypress run"
   },
   "keywords": [],
