@@ -2,7 +2,7 @@
 
 Curso de cypress para Leda-MC
 
-Laboratorio ejemplo y artículos
+## Laboratorio ejemplo y artículos
 
 https://github.com/AlbertoBasalo/cy-lab
 
@@ -36,7 +36,7 @@ npm i -D @types/node
 npm start
 ```
 
-## Target project (Subject under test)
+## 🎯 Target project (Subject under test)
 
 It is a demo web app with simple but enough functionality. Get a clone, install the dependencies, and follow the instructions to start a local server.
 
