@@ -2,15 +2,13 @@
 
 Curso de cypress para Leda-MC
 
-Laboratorio ejemplo  y artículos
+Laboratorio ejemplo y artículos
 
 https://github.com/AlbertoBasalo/cy-lab
 
 https://albertobasalo.medium.com/intro-to-web-testing-with-cypress-85f60e761e09
 
 https://medium.com/@albertobasalo/advanced-tips-for-testing-with-cypress-d1b0f043ebd9
-
-
 
 ## Clone Repository, install dependencies, and run the project
 
@@ -20,8 +18,11 @@ cd leda_cypress
 npm install
 # run cypress
 npm start
-# alternatively add cypress as dev dependency
-npm i -D cypress
+# alternatively add cypress as dependency
+npm i cypress
+# add typescript as dependency
+npm i typescript
+npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier prettier typescript
 ```
 
 ## Target project (Subject under test)
@@ -81,4 +82,3 @@ It is a demo web app with simple but enough functionality. Get a clone, install 
     </a>
   </p>
 </footer>
-
