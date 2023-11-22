@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "Es2021",
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "declaration": true,
+    "strict": true,
+    "importHelpers": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "sourceMap": false,
+    "outDir": "./dist/",
+    "types": ["cypress", "node"],
+    "lib": ["es2021", "DOM"],
+    "paths": {}
+  },
+  "include": ["./**/*.ts"],
+  "exclude": ["node_modules", "**/*.test.ts", "**/*.spec.ts"]
+}

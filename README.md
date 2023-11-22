@@ -18,11 +18,22 @@ cd leda_cypress
 npm install
 # run cypress
 npm start
-# alternatively add cypress as dependency
+```
+
+### alternatively on an empty workspace
+
+```bash
+# create new npm project
+npm init -y
+# add cypress as dependency
 npm i cypress
 # add typescript as dependency
 npm i typescript
-npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier prettier typescript
+# add several dev dependencies
+npm i -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-config-prettier eslint-plugin-prettier prettier
+npm i -D @types/node
+# add cypress open to start script and run it
+npm start
 ```
 
 ## Target project (Subject under test)

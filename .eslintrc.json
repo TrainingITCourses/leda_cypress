@@ -1,0 +1,77 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "globals": {},
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["prettier", "@typescript-eslint"],
+  "rules": {
+    "prettier/prettier": ["off", { "endOfLine": "auto" }],
+    "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-useless-constructor": "warn",
+    "arrow-parens": ["warn", "always"],
+    "block-spacing": ["warn", "always"],
+    "complexity": [
+      "warn",
+      {
+        "max": 5
+      }
+    ],
+    "curly": ["warn", "all"],
+    "max-depth": ["warn", 10],
+    "max-lines": ["warn", 100],
+    "max-lines-per-function": [
+      "warn",
+      {
+        "max": 100,
+        "skipBlankLines": true,
+        "skipComments": true
+      }
+    ],
+    "max-nested-callbacks": ["warn", 10],
+    "max-params": ["warn", 5],
+    "max-statements-per-line": [
+      "warn",
+      {
+        "max": 1
+      }
+    ],
+    "no-else-return": "warn",
+    "no-magic-numbers": [
+      "warn",
+      {
+        "detectObjects": false,
+        "enforceConst": true,
+        "ignore": [-1, 0, 1, 2, 10, 100],
+        "ignoreArrayIndexes": true
+      }
+    ],
+    "no-multiple-empty-lines": [
+      "warn",
+      {
+        "max": 1,
+        "maxEOF": 1
+      }
+    ],
+    "no-nested-ternary": "warn",
+    "no-unneeded-ternary": "warn",
+    "no-unused-vars": "off",
+    "one-var-declaration-per-line": ["warn", "always"],
+    "operator-assignment": ["warn", "always"],
+    "operator-linebreak": ["warn", "none"]
+  }
+}
