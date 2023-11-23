@@ -24,17 +24,18 @@ describe("Given the Published Activities list", () => {
       cy.get("#activities-count").should("have.text", expectedActivities);
     });
     it("then should show the correct number of items", () => {
-      cy.get("#activities-list").find("li").should("have.length", expectedActivities);
+      cy.get("@listContent").find("li").should("have.length", expectedActivities);
     });
     it("then should show the same counter and number of activities", () => {
       cy.get("#activities-count").invoke("text").as("activitiesCount");
+
       cy.get<number>("@activitiesCount").then((activitiesCount) => {
         cy.log("activitiesCount", activitiesCount);
         cy.get("@listContent").find("li").should("have.length", activitiesCount);
       });
     });
     it("then should show the name with a link to the activity detail", () => {
-      cy.get("#activities-list")
+      cy.get("@listContent")
         .find("li")
         .first()
         .find("a")
