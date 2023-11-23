@@ -12,12 +12,13 @@ describe("The Activity Bookings navigation links", () => {
   const repoHref = "https://github.com/AlbertoBasalo/ng-lab";
   const loginHref = "/auth/login";
   const loginUrl = "http://localhost:4200/auth/login";
+  const homeUrl = "/";
   before(() => {
     cy.log("1️⃣ Before ALL");
   });
   beforeEach(() => {
     cy.log("2️⃣ Before Each ");
-    cy.visit("http://localhost:4200/");
+    cy.visit(homeUrl);
   });
   it("should have a link to the repository page", () => {
     cy.get(`a[href='${repoHref}']`);
@@ -36,8 +37,8 @@ describe("The Activity Bookings navigation links", () => {
   });
   it("should not have broken links", () => {
     cy.get("a") // Arrange
-      .each((a) =>
-        cy.request(a.prop("href")) // Act Assert
+      .each(
+        (a) => cy.request(a.prop("href") + "kk") // Act Assert
       );
   });
   afterEach(() => {
