@@ -29,7 +29,8 @@ describe("Given a registered user on the create activity page", () => {
     it("Then should send a post request to the API", () => {
       const postActivityApiUrl = `${Cypress.env("apiUrl")}/activities`;
       cy.intercept("POST", postActivityApiUrl).as("postActivity");
-      cy.get("button[type=submit]").click();
+      cy.get("button[type=submit]").as("submitButton");
+      cy.get("@submitButton").click();
       cy.wait("@postActivity").then((interception) => {
         const { request, response } = interception;
         expect(request.body.name).to.equal(newActivity.name);
