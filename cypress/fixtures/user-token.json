@@ -1,0 +1,4 @@
+{
+  "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImplZmZAZ2F0ZXMub3JnIiwiaWF0IjoxNzAxMTU5OTYzLCJleHAiOjE3MDExNjM1NjMsInN1YiI6IjIifQ.VYTWcrGWx3jDlL1yx1oFkNP79PB44SncodS_XGHZCCg",
+  "user": { "email": "jeff@gates.org", "username": "Jeff Gates", "id": 2 }
+}

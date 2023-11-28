@@ -9,7 +9,7 @@
  */
 describe("Given an already registered and logged user", () => {
   beforeEach(() => {
-    cy.loginUI();
+    cy.loginUiVariable("jeff@gates.org", "1234");
   });
   context("when visits the app", () => {
     const profileUrl = "/auth/profile";

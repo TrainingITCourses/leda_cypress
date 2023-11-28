@@ -9,7 +9,6 @@
  *    then should show the name with a link to the activity detail
  *    then should show activities name, date and price
  */
-
 describe("Given the Published Activities list", () => {
   const expectedActivities = 8;
   const expectedFirstActivity = { name: "Standup Surfing", slug: "standup-surfing" };

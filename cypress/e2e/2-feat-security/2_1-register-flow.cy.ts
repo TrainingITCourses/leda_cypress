@@ -22,8 +22,8 @@ describe("Given a user at login flow", () => {
   });
   context("when sends valid new credentials", () => {
     beforeEach(() => {
-      cy.get("#email").type(credentials.email);
-      cy.get("#password").type(credentials.password);
+      cy.get("#email").focus().clear().type(credentials.email).blur();
+      cy.get("#password").focus().clear().type(credentials.password).blur();
       cy.get("form button[type=submit]").should("be.enabled").click();
     });
     it("should send the form data to the server and redirect user to home and display user menu", () => {
