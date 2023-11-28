@@ -16,7 +16,7 @@ describe("Given I am a valid logged-in user visiting the activities page", () =>
   context("When I search for 'diving'", () => {
     beforeEach(() => {
       // Act
-      activitiesPage.getSearchInput().clear().type("diving");
+      activitiesPage.typeSearchInput("diving");
     });
     it("Then I should see a list of activities containing 'diving' in their title", () => {
       // Assert

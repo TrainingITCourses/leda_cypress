@@ -36,6 +36,7 @@ describe("Given a registered user on the create activity page", () => {
         expect(request.body.name).to.equal(newActivity.name);
         cy.url().should("include", "/activities");
         cy.log("And Then should navigate to the activities list page");
+        cy.screenshot();
         cy.get("#activities-list").find('[itemprop="name"]').should("contain", newActivity.name);
         cy.log("And should see the activity created");
       });
